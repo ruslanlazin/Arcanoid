@@ -13,6 +13,12 @@ var ballRadius = 10;
 var score = 0;
 var isRightPressed = false;
 var isLeftPressed = false;
+var racket = {
+    width: 150,
+    height: 20,
+    x: canvas.width / 2 - 75,
+    y: canvas.height - 20
+}
 
 
 for (x = offSet; x < canvas.width - brickWidth; x += offSet + brickWidth) {
@@ -25,6 +31,13 @@ bricks.forEach(function (brick) {
     ctx.fillStyle = "#" + Math.floor((1 << 24) * Math.random()).toString(16);
     ctx.fillRect(brick.x, brick.y, brickWidth, brickHeight);
 });
+
+function drawRacket(racket) {
+    ctx.fillStyle = '#000';
+    ctx.fillRect(racket.x, racket.y, racket.width, racket.height);
+}
+
+drawRacket(racket);
 
 setInterval(function () {
     moveBall(ball)
@@ -84,11 +97,12 @@ function randomDirection() {
 }
 
 function mouseMoveHandler(event) {
-var relativeX = event.clientX - canvas.offsetLeft;
-    if(relativeX > 0 && relativeX < canvas.width) {
-        paddleX = relativeX - paddleWidth/2;
-
-    }
+    // var relativeX = event.clientX - canvas.offsetLeft;
+    // if (relativeX > 0 && relativeX < canvas.width) {
+    //     paddleX = relativeX - paddleWidth / 2;
+    //
+    // }
+}
 function keyDownHandler(event) {
     if (event.keyCode == 39) {
         isRightPressed = true;
