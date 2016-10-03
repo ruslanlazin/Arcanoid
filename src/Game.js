@@ -8,7 +8,7 @@ var bricks = [];
 var offSet = 10;
 var brickWidth = 80;
 var brickHeight = 30;
-var wallHeight = 250;
+var wallHeight = canvas.height/4;
 var scoreTableHeight = 25;
 var ball = {x: 300, y: 300, xVelocity: 2, yVelocity: 2};
 var ballRadius = 10;
@@ -185,19 +185,19 @@ function keyUpHandler(event) {
 }
 function soundBoom() {
     var audio = new Audio();
-    audio.src = 'steelsword.mp3';
+    audio.src = 'sounds/steelsword.mp3';
     audio.autoplay = true;
     audio.volume = 0.2;
 }
 function soundPing() {
     var audio = new Audio();
-    audio.src = 'woodbat.mp3';
+    audio.src = 'sounds/woodbat.mp3';
     audio.autoplay = true;
     audio.volume = 0.05;
 }
 function soundWin() {
     var audio = new Audio();
-    audio.src = 'Queen – We Are the Champions.mp3';
+    audio.src = 'sounds/Queen – We Are the Champions.mp3';
     audio.autoplay = true;
     audio.volume = 1;
 }

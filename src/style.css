@@ -1,6 +1,6 @@
 
 body {
-    font-family: Georgia;
+    font-family: Arial;
 }
 
 .wrapper {
@@ -22,25 +22,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #555;
 }
 
-.h1Appendix {
-    font-style: italic;
-    font-weight: normal;
-    font-size: .65em;
-}
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-    color: #555;
+    color: #090;
     text-decoration: none;
     font-weight: bold;
-}
-
-.separator {
-    margin: 0;
-    padding: 0;
-/ / clear: both;
 }
 
 .canvas {

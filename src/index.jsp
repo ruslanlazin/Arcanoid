@@ -18,20 +18,19 @@
     <div class="navigation curved container">
         <%@ include file="navbar.html" %>
     </div>
-</div>
 
 
-<div class="center curved container">
-<b>Arcanoid Game</b>
-    <canvas id="canvas" class="canvas" width="1360" height="750">
-        Your browser doesn't support canvas!
-    </canvas>
+    <div class="center curved container">
+        <b>Arcanoid Game</b>
+        <canvas id="canvas" class="canvas" width="1360" height="750">
+            Your browser doesn't support canvas!
+        </canvas>
 
-</div>
+    </div>
 
-<div class=" footer curved container">
-    <%@ include file="footer.html" %>
-</div>
+    <div class=" footer curved container">
+        <%@ include file="footer.html" %>
+    </div>
 </div>
 
 <p class="copyright">Copyright &copy;2015-${year}. All Rights Reserved</p>
