@@ -1,0 +1,104 @@
+
+body {
+    font-family: Georgia;
+}
+
+.wrapper {
+    background-color: #f7f7f7;
+    clear: both;
+}
+
+.container {
+    padding: 0 10px 0;
+    margin: 0 0 10px;
+    clear: both
+}
+
+.curved {
+    border-radius: 6px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #555;
+}
+
+.h1Appendix {
+    font-style: italic;
+    font-weight: normal;
+    font-size: .65em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.separator {
+    margin: 0;
+    padding: 0;
+/ / clear: both;
+}
+
+.canvas {
+    border: solid 1px;
+}
+
+.navigation {
+    background: #eee url(/bg-nav.png) repeat-x top left;
+    margin: 0 0 10px;
+    padding: 0;
+    min-height: 40px;
+}
+
+.navigation span {
+    float: left;
+}
+
+.navigation span {
+    display: block;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.navigation span a:link,
+.navigation span a:visited,
+.navigation span a:hover,
+.navigation span a:active {
+    color: #555;
+    text-decoration: none;
+}
+
+.navigation span.nav-right {
+    float: right;
+    margin-right: 0;
+}
+
+.center {
+    min-height: calc(100vh - 180px);
+}
+
+.footer {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px;
+    color: #999;
+    background-color: #eee;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
+    color: #555;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 10pt;
+    color: #666;
+    text-align: right;
+}
