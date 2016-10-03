@@ -8,7 +8,7 @@ var bricks = [];
 var offSet = 10;
 var brickWidth = 80;
 var brickHeight = 30;
-var wallHeight = canvas.height/4;
+var wallHeight = canvas.height / 4;
 var scoreTableHeight = 25;
 var ball = {x: 300, y: 300, xVelocity: 2, yVelocity: 2};
 var ballRadius = 10;
@@ -160,7 +160,7 @@ function randomDirection() {
 }
 function mouseMoveHandler(event) {
     var relativeX = event.clientX - canvas.offsetLeft;
-    if (relativeX > 0 && relativeX < canvas.width) {
+    if (relativeX > racket.width / 2 && relativeX < canvas.width - racket.width / 2) {
         racket.x = relativeX - racket.width / 2;
     }
 }
